@@ -1,0 +1,14 @@
+@import '../components/layer/layer.less';
+
+html,body{
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	display: flex;
+}
+
+ul,li{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
