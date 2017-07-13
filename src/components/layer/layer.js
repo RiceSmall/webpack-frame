@@ -1,4 +1,4 @@
-import layerTpl from './layer.ejs'
+import layerTpl from './layer.html'
 
 function layer(){
 	return {

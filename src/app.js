@@ -5,9 +5,12 @@ import './components/layer/layer.less'
 const App = function(){
 	var dom = document.getElementById("app");
 	var layer = new Layer();
-	dom.innerHTML = layer.tpl({
+	dom.innerHTML = layer.tpl;
+	/*({
 		name: '赵阔田'
-	});
+	});*/
+	var arr = [1,2,3];
+	console.log(...arr)
 }
 
 new App

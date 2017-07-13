@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 module.exports = {
 	entry: [
-		'webpack-hot-middleware/client?reload=true',
+		'webpack-hot-middleware/client?reload=true',//热加载，当我们的代码作出修改之后，我并不需要重新启动服务，他就可以让新的代码生效
 		'./src/app.js',
 	],	
 	output: {
