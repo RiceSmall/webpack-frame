@@ -48,7 +48,7 @@ module.exports = {
       	loader: "ejs-loader",
       },
       {
-      	test: /\.(jpg|png|gif|svg)$/i, 
+      	test: /\.(jpg|png|gif|svg|woff)$/i, 
       	loaders: [
       			"url-loader?limit=10000&name=img/[name]-[hash:5].[ext]",
       			"image-webpack-loader"
@@ -63,7 +63,9 @@ module.exports = {
 		new htmlWebpackPlugin({
 			filename: 'index.html',
 			template: 'index.html',
-			inject: 'body'
+			inject: 'body',
+			title: '小甜甜'
 		})
 	]
+
 }

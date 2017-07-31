@@ -1,1 +1,0 @@
-function b(){alert('小阔阔')}
