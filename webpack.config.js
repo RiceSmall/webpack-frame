@@ -13,6 +13,7 @@ module.exports = {
 	},
 	devServer: {
 		hot: true,
+		inline: true
 	},
 	module: {
     loaders: [
@@ -38,10 +39,6 @@ module.exports = {
 			    },
 			    { loader: 'less-loader'}
 			  ]
-      },
-      {
-      	test: /\.html$/, 
-      	loader: "html-loader",
       },
       {
       	test: /\.ejs$/, 

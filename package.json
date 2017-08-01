@@ -8,7 +8,8 @@
     "lint": "eslint src/*.js",
     "lintfix": "eslint --fix src/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --config webpack.config.js --progress --display-modules --colors --display-reasons"
+    "webpack": "webpack --config webpack.config.js --progress --display-modules --colors --display-reasons",
+    "clear": "rm -rf dist/"
   },
   "author": "",
   "license": "ISC",

@@ -80,6 +80,6 @@ app.listen(port, 'localhost', function(error) {
         console.error(error);
     } else {
         console.info("==> 🌎  Listening on port %s. Open up http://localhost:%s/ in your browser.", port, port);
-        // opn(uri);
+        opn(uri);
     }
 });
