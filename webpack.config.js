@@ -19,17 +19,17 @@ module.exports = {
     loaders: [
       { 
       	test: /\.js$/, 
-      	loader: "babel-loader",
+      	loader: "babel",
       	exclude: path.resolve(__dirname, "node_modules"),
       	include: path.resolve(__dirname, "src")
       },
       {
       	test: /\.css$|.less$/,
       	use: [
-			    { loader: 'style-loader' },
-			    { loader: 'css-loader' },
+			    { loader: 'style' },
+			    { loader: 'css' },
 			    { 
-			    	loader: 'postcss-loader', 
+			    	loader: 'postcss', 
 			    	options: { 
 			    		sourceMap: true,
 			    		plugins: [
@@ -37,24 +37,25 @@ module.exports = {
 			    		]
 			    	} 
 			    },
-			    { loader: 'less-loader'}
+			    { loader: 'less'}
 			  ]
       },
       {
       	test: /\.ejs$/, 
-      	loader: "ejs-loader",
+      	loader: "ejs",
       },
       {
       	test: /\.(jpg|png|gif|svg|woff)$/i, 
       	loaders: [
-      			"url-loader?limit=10000&name=img/[name]-[hash:5].[ext]",
-      			"image-webpack-loader"
+      			"url?limit=10000&name=img/[name]-[hash:5].[ext]",
+      			"image-webpack"
       	]
       }
     ]
-  },
-
-
+	},
+	resolveLoader: {
+			moduleExtensions: ['-loader']
+	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new htmlWebpackPlugin({

@@ -31,6 +31,18 @@
      *  "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
      */
     "rules": {
-      "no-debugger": 2
+        "quotes": [
+        "error",
+        "single"
+        ],//字符串必须使用单引号
+        "semi": [2, "always"],//语句强制分号结尾
+        "indent": [2, 4],//缩进风格
+        "eqeqeq": 2,//必须使用全等
+        "eol-last": 0,//文件以单一的换行符结束
+        "curly": [2, "all"],//必须使用if(){} 中的{}
+        "camelcase": 2,//强制驼峰命名
+        "consistent-this": [2, "that"],//this别名
+        "no-unused-vars": [2],//不能声明后未被使用的变量
+        "no-alert": 0 //禁止使用alert confirm 1警告 2报错
     }
 }
